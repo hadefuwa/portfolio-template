@@ -355,6 +355,46 @@ document.addEventListener('DOMContentLoaded', () => {
     new ProjectCarousel();
 });
 
+// Hero Image Slider Navigation
+const slides = document.querySelectorAll('.hero-image-slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+});
+
+// Initialize
+showSlide(currentSlide);
+
+// Hide navbar on homepage until scroll
+const navbar = document.querySelector('.navbar');
+if (navbar && (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/portfolio/' )) {
+  function updateNavbarVisibility() {
+    if (window.scrollY === 0) {
+      navbar.classList.add('navbar--hidden');
+    } else {
+      navbar.classList.remove('navbar--hidden');
+    }
+  }
+  window.addEventListener('scroll', updateNavbarVisibility);
+  // Hide on load if at top
+  updateNavbarVisibility();
+}
+
 // Service Worker registration (for PWA features)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
