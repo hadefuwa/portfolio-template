@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamed Adefuwa - Projects Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">HA</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Featured Projects Carousel -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active" data-project="plc">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="assets/Arduino-Projects.jpg" alt="PLC Programming">
+                                <div class="slide-overlay">
+                                    <div class="slide-tech">
+                                        <span class="tech-badge">Siemens S7</span>
+                                        <span class="tech-badge">Allen-Bradley</span>
+                                        <span class="tech-badge">Ladder Logic</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>PLC Programming & Automation</h3>
+                                <p>Industrial automation systems for manufacturing processes including conveyor systems, packaging machines, and assembly lines.</p>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">25+</span>
+                                        <span class="stat-label">Systems</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">3</span>
+                                        <span class="stat-label">PLC Brands</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">99.5%</span>
+                                        <span class="stat-label">Uptime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" data-project="scada">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="assets/Arduino-Projects.jpg" alt="SCADA System">
+                                <div class="slide-overlay">
+                                    <div class="slide-tech">
+                                        <span class="tech-badge">SCADA</span>
+                                        <span class="tech-badge">HMI</span>
+                                        <span class="tech-badge">OPC UA</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>SCADA & HMI Systems</h3>
+                                <p>Supervisory Control and Data Acquisition systems for real-time monitoring and control of industrial processes.</p>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">15</span>
+                                        <span class="stat-label">Screens</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">500+</span>
+                                        <span class="stat-label">Tags</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">Real-time</span>
+                                        <span class="stat-label">Monitoring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" data-project="manufacturing">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="assets/Arduino-Projects.jpg" alt="Manufacturing Control">
+                                <div class="slide-overlay">
+                                    <div class="slide-tech">
+                                        <span class="tech-badge">Manufacturing</span>
+                                        <span class="tech-badge">Control Systems</span>
+                                        <span class="tech-badge">Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>Manufacturing Control Systems</h3>
+                                <p>Large-scale manufacturing automation including safety systems, quality control, and production optimization.</p>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">50+</span>
+                                        <span class="stat-label">Machines</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">24/7</span>
+                                        <span class="stat-label">Operation</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">100%</span>
+                                        <span class="stat-label">Safety</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" data-project="electrical">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="assets/Arduino-Projects.jpg" alt="Electrical Controls">
+                                <div class="slide-overlay">
+                                    <div class="slide-tech">
+                                        <span class="tech-badge">Electrical</span>
+                                        <span class="tech-badge">Control Panels</span>
+                                        <span class="tech-badge">Schematics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>Electrical Control Systems</h3>
+                                <p>Design and implementation of electrical control panels, motor control systems, and power distribution.</p>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">100+</span>
+                                        <span class="stat-label">Panels</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">480V</span>
+                                        <span class="stat-label">Systems</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">UL</span>
+                                        <span class="stat-label">Certified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" data-project="instrumentation">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <img src="assets/Arduino-Projects.jpg" alt="Instrumentation">
+                                <div class="slide-overlay">
+                                    <div class="slide-tech">
+                                        <span class="tech-badge">Instrumentation</span>
+                                        <span class="tech-badge">Sensors</span>
+                                        <span class="tech-badge">Calibration</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>Process Instrumentation</h3>
+                                <p>Industrial instrumentation systems including pressure, temperature, flow, and level measurement.</p>
+                                <div class="slide-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">200+</span>
+                                        <span class="stat-label">Sensors</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">4-20mA</span>
+                                        <span class="stat-label">Signals</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">±0.1%</span>
+                                        <span class="stat-label">Accuracy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="carousel-nav">
+                    <button class="nav-dot active" data-slide="0"></button>
+                    <button class="nav-dot" data-slide="1"></button>
+                    <button class="nav-dot" data-slide="2"></button>
+                    <button class="nav-dot" data-slide="3"></button>
+                    <button class="nav-dot" data-slide="4"></button>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects-showcase">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+            <p class="section-subtitle">A collection of my work across different technologies and domains</p>
+            
+            <div class="projects-grid-3x3">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="PLC Programming" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>PLC Programming</h3>
+                        <p>Industrial automation and control systems programming</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Siemens S7</span>
+                            <span class="tech-tag">Ladder Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="SCADA System" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>SCADA Systems</h3>
+                        <p>Supervisory control and data acquisition systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SCADA</span>
+                            <span class="tech-tag">HMI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Manufacturing Control" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Manufacturing Control</h3>
+                        <p>Large-scale manufacturing automation systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Manufacturing</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Electrical Controls" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Electrical Controls</h3>
+                        <p>Control panel design and electrical systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Electrical</span>
+                            <span class="tech-tag">Control Panels</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Process Instrumentation" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Process Instrumentation</h3>
+                        <p>Industrial sensors and measurement systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Instrumentation</span>
+                            <span class="tech-tag">Sensors</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Motor Control" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Motor Control Systems</h3>
+                        <p>Variable frequency drives and motor automation</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VFD</span>
+                            <span class="tech-tag">Motor Control</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Safety Systems" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Safety Systems</h3>
+                        <p>Industrial safety and emergency shutdown systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Safety PLC</span>
+                            <span class="tech-tag">ESD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Network Systems" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Industrial Networks</h3>
+                        <p>Ethernet/IP and Profinet communication systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ethernet/IP</span>
+                            <span class="tech-tag">Profinet</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Arduino-Projects.jpg" alt="Quality Control" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Quality Control Systems</h3>
+                        <p>Automated quality inspection and control systems</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vision Systems</span>
+                            <span class="tech-tag">QC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Systems Installed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>8+</h3>
+                    <p>PLC Platforms</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Hamed Adefuwa. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
