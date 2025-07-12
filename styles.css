@@ -574,9 +574,9 @@ section {
 .hero-image-slider {
     position: relative;
     width: 100vw;
-    min-height: 480px;
-    height: 60vh;
-    max-height: 700px;
+    min-height: 600px;
+    height: 75vh;
+    max-height: 900px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -717,9 +717,9 @@ section {
 }
 @media (max-width: 900px) {
     .hero-image-slider, .hero-image-slider-track, .hero-image-slide {
-        min-height: 320px;
-        height: 38vh;
-        max-height: 400px;
+        min-height: 400px;
+        height: 50vh;
+        max-height: 600px;
     }
     .slide-overlay {
         padding: 1.2rem 1rem 1.5rem 1rem;
